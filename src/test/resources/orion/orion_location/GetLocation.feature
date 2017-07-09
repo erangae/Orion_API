@@ -2,10 +2,10 @@ Feature: Location Details From PostalCode
 
 	@Single
 	Scenario: Retrieve Location Details of a PostalCode
-		Given I have the 828721 PostalCode
+		Given I have the NZ-1010 PostalCode
 		When I retrieve location details
-		Then I should see Punggol city name
-		And I should see Singapore country name
+		Then I should see Auckland city name
+		And I should see New Zealand country name
 		
 	@Loop
 	Scenario Outline: Retrieve Location Details of a PostalCode
@@ -15,6 +15,6 @@ Feature: Location Details From PostalCode
 		And I should see <country> country name
 
   		Examples:
-    		| postalCode | city 		  | country    |
-    		|  149598    |  Queenstown    |  Singapore |
-    		|  670125    |  Bukit Panjang |  Singapore |
+    		| postalCode | city 		  | country      |
+    		|  NZ-1010   |  Auckland      |  New Zealand |
+    		|  670125    |  Bukit Panjang |  Singapore   |

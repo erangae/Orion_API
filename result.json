@@ -1,0 +1,54 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1010",
+               "short_name" : "1010",
+               "types" : [ "postal_code" ]
+            },
+            {
+               "long_name" : "Auckland",
+               "short_name" : "Auckland",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "New Zealand",
+               "short_name" : "NZ",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Auckland 1010, New Zealand",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : -36.7043363,
+                  "lng" : 175.2196991
+               },
+               "southwest" : {
+                  "lat" : -36.9059247,
+                  "lng" : 174.7425372
+               }
+            },
+            "location" : {
+               "lat" : -36.8502824,
+               "lng" : 174.7657015
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : -36.8311518,
+                  "lng" : 174.7983875
+               },
+               "southwest" : {
+                  "lat" : -36.8650428,
+                  "lng" : 174.7425372
+               }
+            }
+         },
+         "place_id" : "ChIJFYrNovjKcm0RZdo3MCutPWk",
+         "types" : [ "postal_code" ]
+      }
+   ],
+   "status" : "OK"
+}

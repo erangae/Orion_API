@@ -7,6 +7,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+
 import static org.hamcrest.Matchers.equalTo;
 
 public class LocationStepDefinition {
@@ -24,7 +25,6 @@ public class LocationStepDefinition {
 	@When("^I retrieve location details$")
 	public void i_retrieve_location_details(){
 		response = request.when().get(baseURL);
-		System.out.println("response: " + response.prettyPrint());
 		response.then().statusCode(200);
 		response.then().body("status", equalTo("OK"));
 	}
